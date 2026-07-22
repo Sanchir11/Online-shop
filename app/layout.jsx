@@ -2,13 +2,13 @@ import Script from 'next/script';
 import './globals.css';
 
 export const metadata = {
-  title: 'Secret Shop',
-  description: 'Luxury e-commerce collection built with Next.js',
+  title: 'Secret Shop — Тансаг цуглуулга',
+  description: 'Next.js дээрх тансаг зэрэглэлийн цахим худалдааны цуглуулга',
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="mn">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
@@ -19,6 +19,7 @@ export default function RootLayout({ children }) {
         {children}
         <Script src="/main.js" strategy="afterInteractive" />
         <Script src="/shop.js" strategy="afterInteractive" />
+        <Script src="/mn.js" strategy="afterInteractive" />
       </body>
     </html>
   );

@@ -29,7 +29,7 @@
     'New Private Arrivals': 'Шинэ ирц', 'Discover what just landed': 'Шинээр ирсэн бүтээгдэхүүн',
     'New': 'Шинэ', 'View': 'Үзэх', 'Trusted Brands': 'Найдвартай брэнд',
     'Quality brands you can trust': 'Чанартай, найдвартай брэндүүд',
-    'Customer Reviews': 'Үнэлгээ', 'Real feedback from verified customers': 'Баталгаажсан хэрэглэгчдийн сэтгэгдэл',
+    'Customer Reviews': 'Хэрэглэгчийн сэтгэгдэл', 'Real feedback from verified customers': 'Баталгаажсан хэрэглэгчдийн сэтгэгдэл',
     'Join Our Private Club': 'Бүртгүүлээд захиалга хийгээрэй',
     'Get discreet offers, new arrivals, and member discounts.': 'Нууц санал, шинэ бүтээгдэхүүн, гишүүний хямдрал.',
     'Subscribe': 'Бүртгүүлэх',

@@ -296,39 +296,8 @@ if (searchToggle && searchBar) {
 })();
 
 /* ============================================================
-   WISHLIST BUTTONS
+   WISHLIST & CART — handled by store.js
    ============================================================ */
-document.querySelectorAll('.product-wishlist').forEach(btn => {
-  btn.addEventListener('click', (e) => {
-    e.stopPropagation();
-    btn.classList.toggle('active');
-    const icon = btn.querySelector('i');
-    if (btn.classList.contains('active')) {
-      icon.classList.remove('fas');
-      icon.classList.add('fas');
-      showToast('Added to wishlist!');
-    } else {
-      showToast('Removed from wishlist.');
-    }
-  });
-});
-
-/* ============================================================
-   ADD TO CART BUTTONS
-   ============================================================ */
-document.querySelectorAll('.btn-add-cart').forEach(btn => {
-  btn.addEventListener('click', () => {
-    // Update cart badge
-    const badge = document.querySelector('.cart-badge');
-    if (badge) {
-      const current = parseInt(badge.textContent) || 0;
-      badge.textContent = current + 1;
-      badge.style.transform = 'scale(1.3)';
-      setTimeout(() => { badge.style.transform = ''; }, 300);
-    }
-    showToast('Item added to cart!');
-  });
-});
 
 /* ============================================================
    NEWSLETTER FORM
@@ -369,6 +338,7 @@ function showToast(msg) {
     toast.classList.remove('show');
   }, 3000);
 }
+window.showToast = showToast;
 
 /* ============================================================
    TOUCH SWIPE SUPPORT (shared utility)

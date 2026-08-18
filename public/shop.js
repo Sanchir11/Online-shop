@@ -1,18 +1,16 @@
 (() => {
-  const categories = ['watches', 'shoes', 'bags', 'perfumes', 'jewelry', 'accessories'];
-  const collections = ['new', 'bestsellers', 'limited', 'sale'];
+  const categories = ['toys', 'lingerie', 'wellness', 'couples', 'lubricants', 'accessories'];
+  const collections = ['new', 'bestsellers', 'sale'];
   const collectionLabels = {
     new: 'New Arrivals',
     bestsellers: 'Best Sellers',
-    limited: 'Limited Edition',
     sale: 'Sale',
   };
 
   const collectionProductNames = {
-    new: ['Royal Black Watch', 'Premium Leather Bag', 'Designer Sneakers', 'Rose Gold Jewelry Set', 'Mini Leather Crossbody'],
-    bestsellers: ['Elite Gold Watch', 'Classic Designer Bag', 'Luxury Sunglasses', 'Diamond Pendant Necklace'],
-    limited: ['Elite Gold Watch', 'Luxury Sunglasses', 'Signature Eau De Parfum', 'Mini Leather Crossbody'],
-    sale: ['Luxury Sneakers', 'Classic Designer Bag', 'Luxury Jacket'],
+    new: ['Velvet Pulse Massager', 'Couples Wellness Kit', 'Silk Lace Bodysuit', 'Remote Couples Kit', 'Wellness Starter Pack'],
+    bestsellers: ['Rechargeable Wand Pro', 'Satin Robe Set', 'Aroma Massage Oil', 'Remote Couples Kit'],
+    sale: ['Silk Lace Bodysuit', 'Satin Robe Set', 'Premium Water Lube 250ml'],
   };
 
   document.querySelectorAll('a[href="#"]').forEach(link => {
@@ -25,7 +23,6 @@
     const collection = {
       'new arrivals': 'new',
       'best sellers': 'bestsellers',
-      'limited edition': 'limited',
       sale: 'sale',
     }[label];
 
@@ -84,7 +81,7 @@
   gridBtn?.addEventListener('click', () => { grid?.classList.remove('list-view'); gridBtn.classList.add('active'); listBtn?.classList.remove('active'); });
   listBtn?.addEventListener('click', () => { grid?.classList.add('list-view'); listBtn.classList.add('active'); gridBtn?.classList.remove('active'); });
 
-  const money = value => '$' + Number(value || 0).toLocaleString();
+  const money = value => Number(value || 0).toLocaleString('en-US') + '₮';
   const updatePrices = () => { if (!min || !max) return; if (+min.value > +max.value) [min.value, max.value] = [max.value, min.value]; if (minLabel) minLabel.textContent = money(min.value); if (maxLabel) maxLabel.textContent = money(max.value); filter(); };
   min?.addEventListener('input', updatePrices);
   max?.addEventListener('input', updatePrices);

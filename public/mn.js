@@ -13,7 +13,7 @@
     'Toys': 'Тоглоом', 'Lingerie': 'Дотуур хувцас', 'Wellness': 'Эрүүл мэнд',
     'Couples': 'Хосын', 'Lubricants': 'Тос, гель', 'Accessories': 'Дагалдах',
     'Discover Your': 'Хувийн ертөнцөө', 'Private World': 'нээн ол',
-    'Premium adult products with discreet packaging<br />and fast private delivery.': 'Нууц бүрхүүл, хурдан хүргэлттэй чанартай бүтээгдэхүүн.',
+    'Premium adult products with discreet packaging<br />and fast private delivery.': 'Хурдан шуурхай чанартай бүтээгдэхүүн санал болгоноооооо',
     'Privacy Is': 'Нууцлал бол', 'Guaranteed': 'баталгаатай',
     'Carefully selected adult wellness products<br />for comfort, quality, and discretion.': 'Чанар, тав тух, нууцлалыг эрхэмлэн сонгосон бүтээгдэхүүн.',
     'Fresh Stock 2026': '2026 шинэ нөөц', 'Explore Premium': 'Дээд зэргийн',

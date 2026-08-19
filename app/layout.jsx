@@ -25,6 +25,7 @@ export default function RootLayout({ children }) {
         <Script src="/auth.js" strategy="afterInteractive" />
         <Script src="/main.js" strategy="afterInteractive" />
         <Script src="/shop.js" strategy="afterInteractive" />
+        <Script src="/shop-sort.js" strategy="afterInteractive" />
         <Script src="/mn.js" strategy="afterInteractive" />
       </body>
     </html>

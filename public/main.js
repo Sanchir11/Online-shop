@@ -406,9 +406,9 @@ if ('IntersectionObserver' in window) {
   `;
   document.head.appendChild(style);
 
-  const targets = document.querySelectorAll(
+  const targets = [...document.querySelectorAll(
     '.product-card, .category-card, .arrival-card, .testimonial-card, .flash-sale-inner, .newsletter-inner'
-  );
+  )].filter(el => !el.closest('#shopGrid'));
 
   targets.forEach((el, i) => {
     el.classList.add('reveal');
